@@ -4,6 +4,7 @@
  */
 package mx.itson.entities;
 
+import com.google.gson.annotations.SerializedName;
 import java.util.Date;
 import mx.itson.tangamandapio.enums.WeatherStatus;
 
@@ -13,7 +14,9 @@ import mx.itson.tangamandapio.enums.WeatherStatus;
  */
 public class Forecast {
   private Date day;
+  @SerializedName("min_temperature")
   private int minTemperature;
+  @SerializedName("max_temperature")
   private int maxTemperature;
   private WeatherStatus status;
   
